@@ -171,7 +171,7 @@ class CommonCard extends StatelessWidget with Constant, ConstantStrings {
             Positioned(
               top: 0.h,
               right: 0.w,
-              child: Image.asset(icSplash),
+              child: Image.asset(icPopular),
               // CustomPaint(
               //   size: Size(58.w, (58.w * 0.9614078046593437).toDouble()),
               //   //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
@@ -201,22 +201,14 @@ class CommonCard extends StatelessWidget with Constant, ConstantStrings {
                   Container(
                     height: 20.h,
                     width: 20.h,
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       shape: BoxShape.circle,
-                      color: featureAvailabilityList[index] == true
-                          ? clrWhite
-                          : clrTransparent,
-                      border: Border.all(color: clrWhite),
                     ),
                     child: Center(
-                      child: Icon(
+                      child: Image.asset(
                         featureAvailabilityList[index] == true
-                            ? Icons.check
-                            : Icons.close,
-                        color: featureAvailabilityList[index] == true
-                            ? beginColor
-                            : clrWhite,
-                        size: 15.h,
+                            ? icCorrect
+                            : icClose,
                       ),
                     ),
                   ),
@@ -230,6 +222,9 @@ class CommonCard extends StatelessWidget with Constant, ConstantStrings {
                         color: featureAvailabilityList[index] == true
                             ? clrWhite
                             : clrWhite.withOpacity(0.7),
+                        decoration: featureAvailabilityList[index] == false
+                            ? TextDecoration.lineThrough
+                            : TextDecoration.none,
                       ),
                       maxLines: 2,
                       textAlign: TextAlign.start,

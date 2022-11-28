@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:lottie/lottie.dart';
 import 'package:web_demo/framework/choose_plan/choose_plan_provider.dart';
 import 'package:web_demo/framework/choose_plan/choose_plan_screen_controller.dart';
 import 'package:web_demo/ui/choose_plan/helper/commonButton.dart';
@@ -36,6 +37,7 @@ class _ChoosePlanWebScreenState extends ConsumerState<ChoosePlanWebScreen>
   Widget build(BuildContext context) {
     final choosePlanWatch = ref.watch(choosePlanProvider);
     return Scaffold(
+      backgroundColor: clrWhite,
       body: bodyWidget(choosePlanWatch),
     );
   }
@@ -94,14 +96,7 @@ class _ChoosePlanWebScreenState extends ConsumerState<ChoosePlanWebScreen>
   Widget topBarView() {
     return Column(
       children: [
-        Container(
-          height: 57.h,
-          width: 57.h,
-          decoration: BoxDecoration(
-            border: Border.all(color: clr0xff707070),
-            shape: BoxShape.circle,
-          ),
-        ),
+        Lottie.asset(icMainLogo),
         SizedBox(
           height: 9.h,
         ),

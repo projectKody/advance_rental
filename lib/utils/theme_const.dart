@@ -149,9 +149,15 @@ class Constant {
  */
 
   static String assets = 'assets/images/';
+  static String anim = 'assets/anim/';
 
   //splash
-  String icSplash = '${assets}ic_popular.png';
+  String icPopular = '${assets}ic_popular.png';
+  String icCorrect = '${assets}ic_correct.png';
+  String icClose = '${assets}ic_close.png';
+
+  // Animation
+  String icMainLogo = '${anim}ic_main_logo.json';
 
 
   basicDeviceHeightWidth(BuildContext context, Size designSize) {

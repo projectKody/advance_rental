@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:lottie/lottie.dart';
 import 'package:web_demo/ui/choose_plan/helper/commonButton.dart';
 import 'package:web_demo/utils/constant.dart';
 import 'package:web_demo/utils/theme_const.dart';
@@ -68,15 +69,16 @@ overlyScreen(
                             padding: EdgeInsets.symmetric(horizontal: 25.w),
                             child: Row(
                               children: [
-                                Container(
-                                  height: 57.h,
-                                  width: 57.h,
-                                  decoration: BoxDecoration(
-                                    border: Border.all(
-                                        color: Constant().clr0xff707070),
-                                    shape: BoxShape.circle,
-                                  ),
-                                ),
+                                // Container(
+                                //   height: 57.h,
+                                //   width: 57.h,
+                                //   decoration: BoxDecoration(
+                                //     border: Border.all(
+                                //         color: Constant().clr0xff707070),
+                                //     shape: BoxShape.circle,
+                                //   ),
+                                // ),
+                                Lottie.asset(Constant().icMainLogo),
                                 SizedBox(
                                   width: 20.w,
                                 ),
