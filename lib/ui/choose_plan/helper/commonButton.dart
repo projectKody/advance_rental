@@ -7,8 +7,9 @@ class CommonButton extends StatelessWidget with Constant {
   final Function() onTap;
   final double height;
   final double width;
+  final TextStyle? textStyle;
 
-  CommonButton({Key? key, required this.title, required this.onTap, required this.height, required this.width})
+  CommonButton({Key? key, required this.title, required this.onTap, required this.height, required this.width, this.textStyle})
       : super(key: key);
 
   @override
@@ -21,7 +22,7 @@ class CommonButton extends StatelessWidget with Constant {
         height: height,
         width: width,
         decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(5.r),
+          borderRadius: BorderRadius.circular(5.h),
           gradient: LinearGradient(
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
@@ -35,7 +36,7 @@ class CommonButton extends StatelessWidget with Constant {
         child: Center(
           child: Text(
             title,
-            style: TextStyles.txtMedium20.copyWith(color: clrWhite),
+            style: textStyle ?? TextStyles.txtMedium20.copyWith(color: clrWhite),
           ),
         ),
       ),

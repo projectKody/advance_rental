@@ -5,6 +5,9 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:web_demo/ui/choose_plan/choose_plan_screen.dart';
 import 'package:web_demo/ui/choose_plan/web/choose_plan_web_screen.dart';
+import 'package:web_demo/ui/create_poster/create_poster_screen.dart';
+import 'package:web_demo/ui/create_poster/mobile/create_poster_mobile_screen.dart';
+import 'package:web_demo/ui/promote_business/promote_business_screen.dart';
 import 'package:web_demo/utils/theme_const.dart';
 
 void main() {
@@ -80,7 +83,7 @@ class _MyAppState extends ConsumerState<MyApp> with Constant {
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        home: ChoosePlanScreen(),
+        home: PromoteBusinessScreen(),
       ),
     );
   }

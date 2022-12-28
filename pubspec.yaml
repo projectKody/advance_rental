@@ -45,6 +45,9 @@ dependencies:
   responsive_builder: 0.4.3
   lottie: 2.0.0
 
+  flutter_expanded_tile: ^0.3.6
+  info_popup: ^2.4.6
+
 dev_dependencies:
   flutter_test:
     sdk: flutter

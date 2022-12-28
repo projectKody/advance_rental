@@ -98,6 +98,7 @@ class Constant {
   Color clrBorder = const Color(0xff979797);
   Color clrTextGrey = const Color(0xff6B6B6B);
   Color clrTextGreyLight = const Color(0xff8E8E8E);
+  Color clrCFCFCF = const Color(0xffCFCFCF);
 
   /// Spice Add Colors
 
@@ -123,6 +124,10 @@ class Constant {
   Color clr0xff4050B6 = const Color(0xff4050B6);
   Color clr0xff000089 = const Color(0xff000000);
   Color clr0xff1CC17D = const Color(0xff1CC17D);
+  Color clr0xffEBF2F8 = const Color(0xffEBF2F8);
+  Color clr0xffF4F4FC = const Color(0xffF4F4FC);
+  Color clr0xffF5F5F8 = const Color(0xffF5F5F8);
+  Color clrRed = const Color(0xffEC1C23);
 
   // Color clr0xff897557 = const Color(0xff897557);
 
@@ -155,6 +160,21 @@ class Constant {
   String icPopular = '${assets}ic_popular.png';
   String icCorrect = '${assets}ic_correct.png';
   String icClose = '${assets}ic_close.png';
+  String icVideoCamera = '${assets}ic_video_camera.png';
+  String icHindi = '${assets}ic_hindi.png';
+  String icPoster = '${assets}ic_poster.png';
+  String icShopNameBG = '${assets}ic_shopname_bg.png';
+  String icPoster2 = '${assets}ic_poster2.png';
+  String icCloseGrey = '${assets}ic_close_grey.png';
+  String icSelectRight = '${assets}ic_select_right.png';
+  String icGallery = '${assets}ic_gallery.png';
+  String icCamera = '${assets}ic_camera.png';
+  String icSpiceMoneyPrachar = '${assets}ic_spicemoney_prachar.png';
+  String icVideoBg = '${assets}ic_videobg.png';
+  String icDownArrow = '${assets}ic_down_arrow.png';
+  String icStep1 = '${assets}ic_step1.png';
+  String icStep2 = '${assets}ic_step2.png';
+  String icStep3 = '${assets}ic_step3.png';
 
   // Animation
   String icMainLogo = '${anim}ic_main_logo.json';
@@ -197,6 +217,23 @@ class TextStyles {
         fontFamily: Constant().fontFamily,
         fontWeight: Constant().fwSemiBold,
       );
+
+
+  static TextStyle get txtBold11 => TextStyle(
+    fontSize: 11.h,
+    color: Constant().clrBlack,
+    fontFamily: Constant().fontFamily,
+    fontWeight: Constant().fwBold,
+  );
+
+  static TextStyle get txtRegular11 => TextStyle(
+    fontSize: 11.h,
+    color: Constant().clrBlack,
+    fontFamily: Constant().fontFamily,
+    fontWeight: Constant().fwRegular,
+  );
+
+
 
   ///-------------12----------------
   static TextStyle get txtRegular12 => TextStyle(
@@ -486,6 +523,21 @@ class TextStyles {
         fontFamily: Constant().fontFamily,
         fontWeight: Constant().fwSemiBold,
       );
+
+  static TextStyle get txtMedium23 => TextStyle(
+    fontSize: 23.h,
+    color: Constant().clrBlack,
+    fontFamily: Constant().fontFamily,
+    fontWeight: Constant().fwMedium,
+  );
+
+  ///-------------24----------------
+  static TextStyle get txtRegular24 => TextStyle(
+    fontSize: 24.h,
+    color: Constant().clrBlack,
+    fontFamily: Constant().fontFamily,
+    fontWeight: Constant().fwRegular,
+  );
 
   ///-------------25----------------
   static TextStyle get txtRegular25 => TextStyle(
